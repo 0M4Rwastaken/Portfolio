@@ -10,7 +10,7 @@
 }
 
 body {
-    transition: background-color 0.3s ease, color 0.3s ease;
+ 
     font-family: "Poppins", sans-serif;
 }
 
@@ -187,18 +187,15 @@ section {
     gap: 5rem;
     height: 80vh;
     
-    
-}
-
-.profile-pic{
-    border-radius: 25rem;
-    color:rgb(53, 53, 53);
-    border: 2px solid; 
 }
 
 .section__pic-container {
     display: flex; 
-    margin: auto 1;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    border-color: rgb(163, 163, 163);
+    border-radius: 10rem;
 }
 
 
@@ -302,8 +299,8 @@ section {
 #about {
     position: relative;
 
-
 }
+
 .about-container {
     gap: 2rem;
     margin-bottom: 2rem;
@@ -323,11 +320,7 @@ section {
 }
 
 .about-pic {
-    color: rgb(53, 53, 53);
     border-radius: 2rem;
-    border: 2px solid rgb(53, 53, 53);
-    
-    
 }
 
 .arrow {
@@ -346,19 +339,17 @@ section {
     text-align: center;
 }
 
-#about .section-container {
+.section-container {
     gap: 4rem;
     height: 80%;
-    align-items: center;
 
 }
 
 #about .section__pic-container {
-    height: 400px;
-    width: 400px;
-    
-    display: center;
-    justify-content: center;
+   display: flex;
+   height: 400px;
+   
+
 
 }
 
@@ -490,7 +481,62 @@ footer p{
     text-align: center;
 }
 
+/* NIGHT MODE */
+button.night-mode {
+    
+    
+    display: flex;
+    height: auto;
+    width: 3rem;
+    padding: 2rem;
+}
+body.night-mode{
+    
+    background-color: #121212;
+    color: #ffffff;
+    cursor: default;
+    .btn-color-1, .btn-color-2{
+        background-color: rgb(116, 116, 116);
+        color: #ffffff;
+        border-color: white;
+    }
+    .btn-color-2{
+        background-color: grey;
+    }
+    a{
+        color: white;
+    }
+    .details-container, .details-container p{
 
-
-
-
+        background-color: rgb(12, 12, 12);
+        color: white;
+        border-color: white;
+    
+    }  
+    .text-container p, .article-container h3, .experience-sub-title{
+        color: white;
+    }
+    p, h3{
+        color: rgb(59, 59, 59);
+    }
+    
+    .about-pic {
+        border: 1px solid white;
+        
+    }
+    .profile-pic {
+        border: 1px solid white;
+        border-radius: 15rem;
+    }
+    .menu-links {
+        background-color: #121212;
+        color: #ffffff;
+        border-color: white;
+    }
+   
+}
+button.night-mode {
+    background: none;
+    border: none;
+    
+}
